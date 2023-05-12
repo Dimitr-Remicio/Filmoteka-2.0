@@ -1,0 +1,139 @@
+@import '../utils/colors';
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.header {
+  color: var(--color-white);
+  background-image: var(--header-image);
+  background-color: var(--header-color);
+  background-size: contain;
+  background-position-x: 50%;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+  height: 230px;
+  padding: 58px 71px 0px;
+
+  &--btndark {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+
+  &--nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 35px;
+  }
+  &__nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  &--search {
+    width: 336px;
+    border-bottom: 0.5px solid var(--color-white);
+  }
+  &--library {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.nav {
+  &__item {
+    text-decoration: none;
+    color: var(--color-white);
+  }
+}
+.logo {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+}
+.menu {
+  text-transform: uppercase;
+}
+
+.input__search {
+  background: inherit;
+  border: none;
+  width: calc(100% - 20px);
+  color: var(--color-white);
+}
+
+.library__btn {
+  text-transform: uppercase;
+  background: inherit;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  padding: 15px 0;
+  width: 136px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+  }
+}
+.active{
+  border-bottom: 3px solid var(--button-color);
+}
+// DESKTOP ⬇️⬇️
+
+@media (min-width: 1024px) {
+  .header {
+    padding-bottom: 50px;
+
+    height: 250px;
+    max-width: 100%;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 1000px;
+      height: 100%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// TABLET ⬇️⬇️
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    &__container {
+      display: flex;
+
+      width: 768px;
+      height: 100%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// MOBILE ⬇️⬇️
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    &__container {
+      min-width: 320px;
+    }
+  }
+}
