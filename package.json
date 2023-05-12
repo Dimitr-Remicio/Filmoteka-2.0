@@ -2,20 +2,21 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://dimitr-remicio.github.io/Filmoteka-2.0",
+  "homepage": "https://dimitr-remicio.github.io/Filmoteka1
+  ",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dimitr-Remicio/Filmoteka-2.0.git"
+    "url": "git+https://github.com/Dimitr-Remicio/Filmoteka1.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dimitr-Remicio/Filmoteka-2.0/issues"
+    "url": "https://github.com/Dimitr-Remicio/Filmoteka1/issues"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
