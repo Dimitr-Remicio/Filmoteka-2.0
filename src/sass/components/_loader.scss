@@ -9,15 +9,15 @@
     position: relative;
     z-index: 500;
     
-    // animation: fadeOutDown; 
-    // animation-duration: 1s; 
-    // animation-delay: 1.5s;
+    animation: fadeOutDown; 
+    animation-duration: 1s; 
+    animation-delay: 1.5s;
     
     svg {
         
-        // animation: fadeInDown; 
-        // animation-duration: 1s; 
-        // animation-delay: 0s;
+        animation: fadeInDown; 
+        animation-duration: 1s; 
+        animation-delay: 0s;
       
 
         margin: 0;
@@ -114,10 +114,10 @@ html {
             height: 28px;
         }
     }
-    // animation: fadeOut; 
-    // animation-duration: 1s; 
-    // animation-delay: 1.5s;
-    // animation-iteration-count:initial;
+    animation: fadeOut; 
+    animation-duration: 1s; 
+    animation-delay: 1.5s;
+    animation-iteration-count:initial;
     
 
 }
