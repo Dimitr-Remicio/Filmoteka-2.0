@@ -7,7 +7,6 @@
 
 .header {
   color: var(--color-white);
-  background-image: var(--header-image);
   background-color: var(--header-color);
   background-size: contain;
   background-position-x: 50%;
@@ -45,6 +44,13 @@
     gap: 20px;
   }
 }
+.header-home {
+  background-image: var(--header-image);
+}
+
+.header-library {
+  background-image: var(--header-library);
+}
 
 .nav {
   &__item {
@@ -52,6 +58,7 @@
     color: var(--color-white);
   }
 }
+
 .logo {
   font-family: 'Roboto';
   font-style: normal;
@@ -88,9 +95,10 @@
     border: 1px solid var(--button-color);
   }
 }
-.active{
+.active {
   border-bottom: 3px solid var(--button-color);
 }
+
 // DESKTOP ⬇️⬇️
 
 @media (min-width: 1024px) {
