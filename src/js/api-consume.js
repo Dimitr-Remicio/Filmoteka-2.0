@@ -19,7 +19,7 @@ const baseImageUrl = 'https://image.tmdb.org/t/p/';
 // Seleccionamos el elemento HTML donde se mostrará el título
 const tituloPelicula = document.getElementById('titulo-pelicula');
 const overview = document.getElementById('descripcion-pelicula');
-const lanzamiento = document.getElementById('ano-lanzamiento');
+const lanzamiento = document.getElementById('año-lanzamiento');
 const posterPelicula = document.getElementById('poster-pelicula');
 
 // Hacer la solicitud GET a la API

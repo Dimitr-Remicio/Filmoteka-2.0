@@ -1,124 +1,108 @@
 // @import './components/loader';
 @import './utils/colors';
 
-// componentes 
+// componentes
 @import './components/header';
 @import './components/footer';
 @import './components/drk-md-btn';
 
-
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-
-*{
-    list-style: none;
-    box-sizing: border-box;
+* {
+  list-style: none;
+  box-sizing: border-box;
 }
 
-body{
-
-    background-color: var(--background-color);
-    color: var(--text-color);
-
-    margin: 0 auto;
-  
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-  
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.header{
-    color: var(--color-white);
-    background-image: var(--header-image);
-    background-color: var(--header-color);
-    background-size: contain;
-    background-position-x: 50%;
-    background-position-y: 80%;
-    background-repeat: no-repeat;
-
-
+.header {
+  color: var(--color-white);
+  background-color: var(--header-color);
+  background-size: contain;
+  background-position-x: 50%;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
 }
 
-.footer{
-    color: var(--text-color);
-    background-image: var(--footer-image);    
-    background-color: var(--footer-image);
-    background-size: contain;
+.footer {
+  color: var(--text-color);
+  background-image: var(--footer-image);
+  background-color: var(--footer-image);
+  background-size: contain;
 
-    height: 50px;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-  
-    margin-top: auto;
+  height: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  margin-top: auto;
 }
-
 
 // DESKTOP ⬇️⬇️
 
 @media (min-width: 1024px) {
-
-
-body{
-
+  body {
     margin: 0 auto;
-  
+
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-  
-}
+  }
 
-.header{
-    padding-bottom:50px ;
+  .header {
+    padding-bottom: 50px;
 
     height: 250px;
     max-width: 100%;
+  }
 
-}
-
-.footer{
-
+  .footer {
     width: 100%;
     height: 50px;
     bottom: 0;
     display: flex;
     justify-content: center;
-  
-    margin-top: auto;
-}
 
-.container{
+    margin-top: auto;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
 
     max-width: 1000px;
     height: 100%;
-  
+
     margin-left: auto;
     margin-right: auto;
-}
+  }
 }
 
 // TABLET ⬇️⬇️
-@media (min-width: 768px) and (max-width: 1023px){
-    .container{
-        display: flex;
-    
-        width: 768px;
-        height: 100%;
-      
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    display: flex;
+
+    width: 768px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 // MOBILE ⬇️⬇️
-@media (min-width: 320px) and (max-width: 767px){
-    .container{
-        min-width: 320px;
-    }
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    min-width: 320px;
+  }
 }
