@@ -1,0 +1,13 @@
+@import '../sass/utils/colors';
+
+.body-movies{
+    
+}
+
+.cardsMovie{
+    background-color: rosybrown;
+    &__image{
+        width: 27.4rem;
+        height: 39.8rem;
+    }
+}
