@@ -6,8 +6,9 @@
     --duration: 2.7s;
     width: auto;
     height: auto;
+    margin: 0 auto;
     position: relative;
-    z-index: 500;
+    z-index: 1000;
     
     animation: fadeOutDown; 
     animation-duration: 1s; 
@@ -20,7 +21,7 @@
         animation-delay: 0s;
       
 
-        margin: 0;
+        margin: 0 auto;
         display: block;
         width: 250px;
         fill: var(--text-color);
@@ -103,17 +104,8 @@ html {
     overflow: hidden;
     margin: 0 auto;
     z-index: 1000;
-    .dribbble {
-        position: absolute;
-        display: block;
-        right: 20px;
-        bottom: 20px;
-        z-index: 100;
-        img {
-            display: block;
-            height: 28px;
-        }
-    }
+
+    
     animation: fadeOut; 
     animation-duration: 1s; 
     animation-delay: 1.5s;

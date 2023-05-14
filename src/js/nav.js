@@ -1,5 +1,5 @@
 // Seleccionamos el elemento con la clase "header--nav" que contiene los enlaces del menú
-const nav = document.querySelector('.header--nav');
+const nav = document.querySelector('.header__nav');
 
 // Función para mostrar la sección correspondiente al hacer click en el enlace del menú
 const ShowNav = (e) => {
