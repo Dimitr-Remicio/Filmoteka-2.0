@@ -4,8 +4,7 @@ export {services};
 
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = '2e9f8fc9479fa19131d9c8fc8ea7c110';
-// const apiKey = '2e9f8fc9479fa19131d9c8fc8ea7c110';
-// const apiUrl = 'https://api.themoviedb.org/3/movie/2';
+let apiUrlById = 'https://api.themoviedb.org/3/movie/2';
 // const apiUrl = 'https://api.themoviedb.org/3';
 
 const categories = {
@@ -16,19 +15,24 @@ const categories = {
   };
 
 // construimos la URL completa con la clave de API
-// const url = `${BASE_URL}?api_key=${API_KEY}`;
-const url = `${BASE_URL}${categories.trending}?api_key=${API_KEY}${categories.basic}&page=1`;
+// const urlbyId = `${apiUrlById}?api_key=${API_KEY}`;
+
 
 
 //proxi
 const services = {
-  getMovies: async function(searchTerm, page,RESULTS_PER_PAGE){
+  getMovies: async function(idMovie,searchTerm, page,RESULTS_PER_PAGE){
     try {
       // console.log('hola desde inicio axios')
+      const url = `${BASE_URL}${categories.trending}?api_key=${API_KEY}${categories.basic}&page=1`;
+      const urlbyId = `${apiUrlById}${idMovie}?api_key=${API_KEY}`;
       const response = await axios.get(url);
+      const response2 = await axios.get(urlbyId);
       const movies = response;
+      const movie = response2;
       // console.log('hola desde respuesta axios')
-      console.log(movies.data.results)
+      console.log(response2.data)
+      console.log(movies.data)
       console.log('hola desde fin axios')
       return movies.data.results;
     } catch (error) {
