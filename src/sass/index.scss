@@ -101,8 +101,23 @@ body {
 }
 
 // MOBILE ⬇️⬇️
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
+  
+  .header{
+    height: 280px;
+    min-width: 280px;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 90%;
+    background-repeat: no-repeat;
+    
+    &-library {
+      background-size: cover;
+      background-position-x: 0%;
+      background-position-y: 100%;
+    }
+  }
   .container {
-    min-width: 320px;
+    min-width: 300px;
   }
 }
