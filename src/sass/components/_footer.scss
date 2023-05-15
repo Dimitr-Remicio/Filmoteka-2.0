@@ -12,7 +12,7 @@
   padding: 40px 0;
 
   &__copyright {
-    color: #545454;
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -76,6 +76,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .footer {
     &__copyright {
+      color: var(--text-color);
       br {
         display: block;
       }
