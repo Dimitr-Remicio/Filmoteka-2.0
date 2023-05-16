@@ -29,7 +29,7 @@ body {
 .header {
   color: var(--color-white);
   background-color: var(--header-color);
-  background-size: contain;
+  background-size: cover;
   background-position-x: 50%;
   background-position-y: 80%;
   background-repeat: no-repeat;
@@ -107,9 +107,9 @@ body {
 @media (min-width: 300px) and (max-width: 767px) {
   
   .header{
-    height: 280px;
+    // height: 280px;
     min-width: 280px;
-    background-size: cover;
+    background-size: auto;
     background-position-x: 50%;
     background-position-y: 90%;
     background-repeat: no-repeat;
