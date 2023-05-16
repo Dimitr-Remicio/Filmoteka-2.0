@@ -89,6 +89,7 @@
     border: none;
     width: calc(307px);
     color: var(--color-white);
+    background-color: var(--search-color);
   }
   &__search:hover,
   &__search:focus {
@@ -131,7 +132,7 @@
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 10px;
   }
   &__title {
     text-transform: uppercase;
