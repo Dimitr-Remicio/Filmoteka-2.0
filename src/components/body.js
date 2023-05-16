@@ -3,13 +3,10 @@
 import { data, services } from '../js/api-consume';
 import './bodyStyles.scss';
 
-// console.log(services.getMovies())
 let markup = '';
-// const movies = services.getMovies();
 const cardsMovies = document.querySelector('.cardsMovie');
 const baseImageUrl = 'https://image.tmdb.org/t/p/';
-// const urlPoster = `${baseImageUrl}w500${data.poster_path}`;
-console.log(cardsMovies);
+
 
 const layoutUtils = {
   renderImages: function (movies) {
@@ -29,3 +26,8 @@ const layoutUtils = {
 };
 
 layoutUtils.refreshMovieList();
+
+// console.log(services.getMoviesByKeyWord('rapido y furioso'))
+// console.log(services.getInfoMovieById(713704));
+// console.log(services.getInfoVideoById(713704));
+console.log(services.getArrayMovies([713704]));
