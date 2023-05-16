@@ -15,14 +15,14 @@
   }
 
   function handleKeyPress(event) {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && !refs.modal.classList.contains("is-hidden")) {
       toggleModal();
     }
   }
 
   function handleOutsideClick(event) {
-    if (!event.target.closest("[data-modal]")) {
-      toggleModal();
+    if (event.target === refs.modal && !refs.modal.classList.contains("is-hidden")) {
+      refs.modal.classList.add("is-hidden");
     }
   }
 })();
