@@ -6,7 +6,7 @@ function hidenItem() {
     // console.log('hello')
     timerId = setInterval(() => {
         loader.classList.add('loadhide');
-    },0);
+    },2000);
 }
 
 hidenItem();
