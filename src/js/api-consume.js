@@ -32,7 +32,7 @@ const services = {
       const url = `${BASE_URL}${categories.querySearch}?api_key=${API_KEY}&query=${keyWord}${categories.basic}&page=${page}`;
       const response = await axios.get(url);
       const movies = response;
-      // console.log(movies.data)
+      console.log(movies.data)
       return movies.data;
     } catch (error) {
       console.log('hola desde error');

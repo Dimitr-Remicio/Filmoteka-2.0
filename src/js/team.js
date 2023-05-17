@@ -51,8 +51,8 @@ export const members = [
     {
       "name": "Alejandra",
       "surname": "Centellas",
-      "url": "https://github.com/",
+      "url": "https://github.com/alecente",
       "role": ["Web Developer"],
-      "photo": "https://i.natgeofe.com/k/37ede7f2-37b5-470c-adad-1abb689b5166/prairie-dog-greeting_square.jpg"
+      "photo": "https://avatars.githubusercontent.com/u/110432497?v=4"
     }
   ]
