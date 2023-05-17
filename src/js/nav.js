@@ -47,3 +47,8 @@ homeLink.addEventListener('click', () => {
 
 // Agregamos la clase "header-home" a la cabecera por defecto
 header.classList.add('header-home');
+
+
+function refreshPage(){
+  window.location.reload();
+} 
