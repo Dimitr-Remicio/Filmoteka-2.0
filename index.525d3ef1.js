@@ -1,0 +1,2 @@
+const t=document.querySelector(".btn-to-top");window.addEventListener("scroll",(function(){const o=window.pageYOffset,e=document.documentElement.clientHeight;o>e&&t.classList.add("btn-to-top--visible");o<e&&t.classList.remove("btn-to-top--visible")})),t.addEventListener("click",(function(){window.pageYOffset>0&&window.scrollTo({top:0,behavior:"smooth"})}));
+//# sourceMappingURL=index.525d3ef1.js.map
