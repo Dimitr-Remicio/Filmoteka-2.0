@@ -14,12 +14,13 @@ const categories = {
 
 //proxi
 const services = {
-  getMovies: async function (page = 1) {
+  getMovies: async function (page = 1
+    ) {
     try {
       const url = `${BASE_URL}${categories.trending}?api_key=${API_KEY}${categories.basic}&page=${page}`;
       const response = await axios.get(url);
       const movies = response;
-      // console.log(response.data);
+      // console.log(response.data.results);
       return movies.data.results;
     } catch (error) {
       console.log('hola desde error');
@@ -70,9 +71,12 @@ const services = {
         )
         .then(response => {
           return response.data;
-        });
+        })
+        .catch(error => console.log(error));
     });
      const resultData = await Promise.all(arrayOfMovies);
+    //  console.log(resultData)
     return resultData;
   },
 };
+// 
