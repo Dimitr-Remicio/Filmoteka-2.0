@@ -18,12 +18,11 @@ const layoutUtils = {
   // },
   renderImages: function (movies) {
     markup += movies
-      .map(({ backdrop_path, original_title, release_date, genre_ids}) => {
-        return `<li>
-            <img class='cardsMovie__image' src='${baseImageUrl}w500${backdrop_path
-            }' alt='image movie'/>
-            <p>${original_title}</p>
-            <p>${getSome(genre_ids)}${release_date}</p>
+      .map(({ poster_path, original_title, release_date, genre_ids}) => {
+        return `<li class="movie-card">
+            <img class='cardsMovie__image' src='${baseImageUrl}w500${poster_path}' alt='image movie'/>
+            <h2 class="movie__title">${original_title}</h2>
+            <p class="movie__genre">${getSome(genre_ids)}<span class="movie__popular">${release_date}</span></p>
             </li>`;
       })
       .join('');
