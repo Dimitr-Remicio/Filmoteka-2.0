@@ -7,6 +7,7 @@
 @import './components/header';
 @import './components/footer';
 @import './components/modal-footer';
+@import './components/modal-body';
 @import './components/drk-md-btn';
 
 
@@ -17,6 +18,9 @@
   box-sizing: border-box;
 }
 
+.div-example{
+  background-color: aliceblue;
+}
 body {
   background-color: var(--background-color);
   color: var(--text-color);
