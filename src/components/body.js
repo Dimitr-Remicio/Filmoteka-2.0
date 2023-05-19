@@ -15,6 +15,7 @@ const services = {
       const url = `${BASE_URL}${categories.trending}?api_key=${API_KEY}${categories.basic}&page=${page}`;
       const response = await fetch(url);
       const movies = await response.json();
+      console.log(movies)
       return movies.results;
     } catch (error) {
       console.log('hola desde error');
@@ -94,7 +95,7 @@ layoutUtils.refreshMovieList();
 
 const ulTag = document.querySelector('.paginationList');
 
-let totalPages = 1000;
+let totalPages = 100;
 let page = 5;
 
 function element(totalPages, page) {
