@@ -62,7 +62,7 @@ function getSome(idArr) {
 function getName(id) {
   return genresAll[id] || `Unknown genre(${id})`;
 }
-// import './bodyStyles.scss';
+
 
 let currentPage = 1;
 let markup = '';
