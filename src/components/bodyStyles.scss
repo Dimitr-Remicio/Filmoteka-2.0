@@ -1,5 +1,9 @@
 @import '../sass/utils/colors';
 
+.container-movies{
+  display: flex;
+  flex-direction: column;
+}
 .body-movies {
   padding: 0 3rem;
   margin: 60px 0px 50px 0px;
@@ -8,12 +12,12 @@
 .cardsMovie {
   background-color: var(--background-color);
   margin: 0 auto;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3.5rem;
-  width: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  // width: auto;
   &__image {
     width: 17.38rem;
     height: 24.9rem;
@@ -33,38 +37,99 @@
     transition: all 150ms ease-out;
   }
 }
-@media (min-width: 300px) and (max-width: 767px) {
-  .movie-card {
-    flex-basis: calc(100%);
-  }
-  .cardsMovie{
-    &__image{
-      width: 100%;
-      height: 40vh;
-      justify-content: center;
-    object-fit: cover;
-    }
 
-  }
-  .movie{
-    &__genre{
-      font-size: 3vw;
-      min-width: 50vw;
-      font-size-adjust: initial;
-      line-height: 20px;
-    }
-    &__title{
-      font-size: 3vw;
-      line-height: 25px;
-      word-spacing: 1px;
-      width: auto;
-      height: auto;
-    }
-  }
-
-  .body-movies {
-    display:flex;
-    padding: 1rem;
-    margin: 70px 10px;
-  }
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  padding: 10px;
 }
+
+.pagination ul{
+  display: flex;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+}
+.pagination ul li{
+  color: var(--button-color);
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination ul li.numb{
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+}
+
+.pagination ul li.dots{
+  font-size: 22px;
+  cursor: default;
+}
+
+.pagination ul li.btn{
+  padding: 0 20px;
+
+}
+
+.pagination ul li.prev{
+  border-radius: 25px 5px 5px 25px;
+
+}
+
+.pagination ul li.next{
+  border-radius: 5px 25px 25px 5px;
+
+}
+
+.pagination ul li.active,
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover{
+  color: #fff;
+  background: var(--button-color);
+
+}
+
+// @media (min-width: 300px) and (max-width: 767px) {
+//   .movie-card {
+//     flex-basis: calc(100%);
+//   }
+//   .cardsMovie{
+//     &__image{
+//       width: 100%;
+//       height: 40vh;
+//       justify-content: center;
+//     object-fit: cover;
+//     }
+
+//   }
+//   .movie{
+//     &__genre{
+//       font-size: 3vw;
+//       min-width: 50vw;
+//       font-size-adjust: initial;
+//       line-height: 20px;
+//     }
+//     &__title{
+//       font-size: 3vw;
+//       line-height: 25px;
+//       word-spacing: 1px;
+//       width: auto;
+//       height: auto;
+//     }
+//   }
+
+//   .body-movies {
+//     display:flex;
+//     padding: 1rem;
+//     margin: 70px 10px;
+//   }
+// }

@@ -20,7 +20,7 @@ const services = {
       const url = `${BASE_URL}${categories.trending}?api_key=${API_KEY}${categories.basic}&page=${page}`;
       const response = await axios.get(url);
       const movies = response;
-      console.log(response.data.results);
+      // console.log(response.data.results);
       return movies.data.results;
     } catch (error) {
       console.log('hola desde error');
