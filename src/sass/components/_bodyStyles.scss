@@ -41,7 +41,15 @@
 }
 @media (min-width: 300px) and (max-width: 767px) {
   .movie-card {
-    flex-basis: calc(100%);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+  }
+  .container-movies{
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .cardsMovie {
     &__image {
@@ -72,6 +80,10 @@
     display: flex;
     padding: 0;
     margin: 0 auto;
+  }
+
+  .body-movies{
+    margin: 50px auto;
   }
 }
 
