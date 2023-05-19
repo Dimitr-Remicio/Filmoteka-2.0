@@ -1,0 +1,21 @@
+@keyframes Scale {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  
+  @keyframes Move {
+    0% {
+      transform: scale(0);
+      transform-origin: center;
+    }
+  
+    100% {
+      transform: scale(1);
+      transform-origin: center;
+    }
+  }

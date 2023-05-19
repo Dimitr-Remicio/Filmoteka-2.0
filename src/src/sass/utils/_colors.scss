@@ -1,0 +1,89 @@
+:root {
+  //  background images
+  --header-image: url('/src/images/hdr-img.png');
+  --header-library: url('/src/images/hdr-library.png');
+  // background colors
+
+  --background-color: #ffffff;
+  --background-color-c: #000000;
+
+  // colors
+
+  --color-black: #00000f;
+  --color-white: #ffffff;
+
+  // text colors
+
+  --text-color: #000000;
+  --text-color-contrast: #ffffff;
+
+  // box shadows
+
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  // hovers
+
+  // butons colors
+
+  --background-button-d: #773204;
+  --button-color: #ff6b08;
+  --button-color--hvr: #816d53;
+
+  // individual colors of components
+  
+  --card-color:#f7f6f6;
+  --search-color:#00000005;
+  --loader-line: #ebe4e4;
+  
+  // --header-image: url(/src/images/hdr-img.png);
+  
+  --header-color: #000000;
+  --footer-image: #f0efef;
+
+  // svg colorsss
+
+  --film-color: #818181;
+}
+
+.darkmode {
+  // background colors
+
+  --background-color-c: #e5e5e5;
+  --background-color: #2c2b2b;
+
+  // colors
+
+  --color-black: #00000f;
+  --color-white: #ffffff;
+
+  // text colors
+
+  --text-color: #fdfdfd;
+  --text-color-contrast: #131212;
+
+  // box shadows
+
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  // hovers
+
+  // butons colors
+
+  --background-button-d: #f0d9cc;
+  --button-color: #ff6b08;
+  --button-color--hvr: #886d5b;
+
+  // individual colors of components
+
+  --card-color:#3b3a3a;
+  --search-color:#00000023;
+  --loader-line: #000000;
+  --footer-image: url(/src/images/footer-img.png);
+  --header-color: #000000;
+
+  // svg colorsss
+
+  --film-color: #ff6b08;
+}
