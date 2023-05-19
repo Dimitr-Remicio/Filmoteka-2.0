@@ -91,6 +91,8 @@ const layoutUtils = {
 layoutUtils.refreshMovieList();
 
 
+
+
 const ulTag = document.querySelector('.paginationList');
 
 let totalPages = 100;
