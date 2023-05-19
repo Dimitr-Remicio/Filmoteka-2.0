@@ -12,21 +12,83 @@
           <button
             type="button"
             id="clearModal"
-            class="close" 
+            class="close"
             data-dismiss="modal"
             aria-label="Close"
           >
             <span aria-hidden="true">x</span>
           </button>
         </div>
-        <div class="modal-body"></div>
-        <div class="">
-          <button class="library__btn library__btn--modal modal-watched">
-            Watched
-          </button>
-          <button class="library__btn library__btn--modal modal-queue">
-            queue
-          </button>
+        <div class="modal-body">
+          <div class="content_modal"></div>
+
+          <div class="button_library">
+            <h2>About</h2>
+            <div class="film-info">
+              <ul class="list film-info__names">
+                <li class="film-info__name">
+                  <p class="content-list__item" data-attribute="votesTitle">
+                    Vote/Votes
+                  </p>
+                </li>
+                <li class="film-info__name">
+                  <p
+                    class="content-list__item"
+                    data-attribute="popularityTitle"
+                  >
+                    Popularity
+                  </p>
+                </li>
+                <li class="film-info__name">
+                  <p class="content-list__item" data-attribute="originalTitle">
+                    Original Title
+                  </p>
+                </li>
+                <li class="film-info__name">
+                  <p class="content-list__item" data-attribute="genresTitle">
+                    Genre
+                  </p>
+                </li>
+              </ul>
+              <ul class="list film-info__values">
+                <li class="film-info__value">
+                  <span class="film-info__rate">7.485</span> 
+                </li>
+                <li class="film-info__value">
+                  <span
+                    class="content-list__item--value"
+                    data-attribute="popularity"
+                    >481.976</span
+                  >
+                </li>
+                <li class="film-info__value">
+                  <span class="content-list__item--value" data-attribute="title"
+                    >Air</span
+                  >
+                </li>
+                <li class="film-info__value">
+                  <span class="content-list__item--value" data-attribute="genre"
+                    >Drama History
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              sint voluptate harum, dolores similique nemo, rem aspernatur
+              impedit maiores, eveniet aperiam. Natus eius assumenda odit
+              quaerat quis ipsam, similique laudantium dolorum corrupti modi
+              sunt earum? Quibusdam inventore maxime, labore illo consequatur
+              quaerat, nam consectetur sequi sed, quam ad ipsum sapiente!
+            </p>
+
+            <button class="library__btn library__btn--modal modal-watched">
+              Watched
+            </button>
+            <button class="library__btn library__btn--modal modal-queue">
+              queue
+            </button>
+          </div>
         </div>
       </div>
     </div>

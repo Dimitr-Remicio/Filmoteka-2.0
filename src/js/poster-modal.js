@@ -10,7 +10,7 @@ const members = [
 ]
 
 
-const contentModal = document.querySelector('div.modal-body');
+const contentModal = document.querySelector('.content_modal');
 const libtn = document.querySelector('.movie-card');
 const clearContent = document.querySelector('#clearModal');
 const clearWhnClck = document.querySelector('.modal');
@@ -39,7 +39,10 @@ function addModalPoster(event) {
         `
     <div class="modal-body__image">
     ${contentPoster}
+    
     </div>
+    
+    
     `
     )
     .join('');
