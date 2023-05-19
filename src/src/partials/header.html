@@ -1,0 +1,60 @@
+<header class="header">
+  <div class="header__container">
+    <!-- DARKMODE -->
+    <div class="header__content header--btndark">
+      <div class="BtnDark">
+        <input type="checkbox" class="Darkbutton" id="checkbox" />
+        <label for="checkbox" class="Darkbutton-label">
+          <!-- <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i> -->
+          <span class="ball"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="header__content header--nav">
+      <a
+        class="nav__item logo"
+        href="#"
+        data-value="searched"
+        onClick="refreshPage()"
+      >
+        <svg width="24px" height="24px" data-value="searched">
+          <use
+            href="./images/svg-content.svg#Film_Svg"
+            data-value="search"
+          ></use>
+        </svg>
+        Filmoteka
+      </a>
+      <nav class="header__nav">
+        <a class="nav__item menu home" href="#" data-value="search">Home</a>
+        <a class="nav__item menu library" href="#" data-value="library"
+          >My Library</a
+        >
+      </nav>
+    </div>
+
+    <div class="header__content header--search">
+      <form action="" class="search-form">
+        <input
+          class="input__search"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Movie Search"
+        />
+        <button type="submit" class="input__btn">
+          <svg width="12" height="12">
+            <use href="./images/svg-content.svg#Search_Svg"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="header__content header--library">
+      <button class="library__btn header__watched">Watched</button>
+      <button class="library__btn header__queue">queue</button>
+    </div>
+  </div>
+</header>

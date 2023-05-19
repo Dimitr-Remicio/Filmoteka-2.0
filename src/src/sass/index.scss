@@ -1,0 +1,132 @@
+// @import './components/loader';
+@import './utils/colors';
+@import './utils/animations';
+
+// componentes
+@import './components/btn-to-top';
+@import './components/header';
+@import './components/bodyStyles';
+@import './components/footer';
+@import './components/modal-footer';
+@import './components/modal-body';
+@import './components/drk-md-btn';
+
+
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.div-example{
+  background-color: aliceblue;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  color: var(--color-white);
+  background-color: var(--header-color);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  color: var(--text-color);
+  background-image: var(--footer-image);
+  background-color: var(--footer-image);
+  background-size: contain;
+
+  height: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  margin-top: auto;
+}
+
+// DESKTOP ⬇️⬇️
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .header {
+    padding-bottom: 50px;
+
+    height: 250px;
+    max-width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    margin-top: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1000px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// TABLET ⬇️⬇️
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    display: flex;
+
+    width: 768px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// MOBILE ⬇️⬇️
+@media (min-width: 300px) and (max-width: 767px) {
+  
+  .header{
+    // height: 280px;
+    min-width: 280px;
+    background-size: auto;
+    background-position-x: 50%;
+    background-position-y: 90%;
+    background-repeat: no-repeat;
+    
+    &-library {
+      background-size: cover;
+      background-position-x: 0%;
+      background-position-y: 100%;
+    }
+  }
+  .container {
+    min-width: 300px;
+  }
+}
