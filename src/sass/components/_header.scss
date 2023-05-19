@@ -120,6 +120,19 @@
     background-color: var(--button-color);
     border: 1px solid var(--button-color);
   }
+
+  &--modal {
+    background-color: var(--color-white);
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+  }
+
+  &--modal:hover,
+  &--modal:focus {
+    background-color: var(--button-color);
+    color: var(--color-white);
+    border: 1px solid var(--button-color);
+  }
 }
 .active {
   border-bottom: 3px solid var(--button-color);
@@ -127,7 +140,7 @@
 
 .movie {
   &__title,
-  &__genre{
+  &__genre {
     padding-left: 10px;
     font-family: 'Roboto';
     font-weight: 500;
@@ -140,11 +153,11 @@
   }
   &__genre {
     line-height: 18px;
-    color: #FF6B08;
+    color: #ff6b08;
   }
-  &__popular{
-    background-color: #FF6B08;
-    color: #FFF;
+  &__popular {
+    background-color: #ff6b08;
+    color: #fff;
     padding: 1px 3px;
     margin-left: 5px;
     border-radius: 3px;
@@ -206,8 +219,8 @@
       width: 280px;
     }
   }
-  .input{
-    &__search{
+  .input {
+    &__search {
       width: 251px;
     }
   }

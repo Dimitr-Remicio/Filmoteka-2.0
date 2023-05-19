@@ -9,4 +9,4 @@ function hidenItem() {
     },2000);
 }
 
-hidenItem();
+hidenItem(); 

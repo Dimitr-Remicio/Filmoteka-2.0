@@ -32,10 +32,13 @@ function createMovieCard(movie) {
   const { title, poster_path, release_date, popularity, genre_ids } = movie;
   const movieCard = document.createElement('li');
   movieCard.classList.add('movie-card');
+  movieCard.setAttribute("onClick", "addModalPoster(event)");
 
   const moviePoster = document.createElement('img');
-  moviePoster.src = `https://image.tmdb.org/t/p/w500${poster_path}`;
+  moviePoster.src = poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : 'https://i.postimg.cc/SKKfTyxF/no-image-black.jpg';
   moviePoster.alt = title;
+  moviePoster.setAttribute("data-toggle", "modal");
+  moviePoster.setAttribute("data-target", "#posterModal")
   moviePoster.classList.add('cardsMovie__image');
 
   const movieTitle = document.createElement('h2');

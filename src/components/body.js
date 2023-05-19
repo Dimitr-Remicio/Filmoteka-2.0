@@ -72,11 +72,13 @@ const baseImageUrl = 'https://image.tmdb.org/t/p/';
 const layoutUtils = {
   renderImages: function (movies) {
     markup += movies
-      .map(({ poster_path, original_title, release_date, genre_ids}) => {
-        return `<li class="movie-card">
-            <img class='cardsMovie__image' src='${baseImageUrl}w500${poster_path}' alt='image movie'/>
+      .map(({ poster_path, original_title, release_date, genre_ids, id }) => {
+        return `<li class="movie-card" onclick="addModalPoster(event)" data-value="${id}" >
+            <img class='cardsMovie__image' src='${baseImageUrl}w500${poster_path}' alt='image movie' data-toggle="modal" data-target="#posterModal" />
             <h2 class="movie__title">${original_title}</h2>
             <p class="movie__genre">${getSome(genre_ids)}<span class="movie__popular">${release_date}</span></p>
+      
+            
             </li>`;
       })
       .join('');
@@ -88,7 +90,10 @@ const layoutUtils = {
   },
 };
 
-layoutUtils.refreshMovieList();
+// const arrayMovies = layoutUtils.refreshMovieList();
+
+  layoutUtils.refreshMovieList();
+
 
 
 const ulTag = document.querySelector('.paginationList');
