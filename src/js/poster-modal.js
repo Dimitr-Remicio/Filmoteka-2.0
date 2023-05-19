@@ -17,6 +17,7 @@ const clearWhnClck = document.querySelector('.modal');
 
 
 
+
 function addModalPoster(event) {
   event.preventDefault();
   
@@ -25,10 +26,13 @@ function addModalPoster(event) {
   document.querySelector('.modal-watched').setAttribute('id', `${event.currentTarget.dataset.value}`);
   document.querySelector('.modal-queue').setAttribute('id', `${event.currentTarget.dataset.value}`);
   // console.log(contentPoster);
+  
+  
+  // const description = document.querySelector('.movie__About');
+
+  // description.classList.add('About__show');
 
 
-  const moviePoster = document.createElement('div');
-  moviePoster.classList.add('div-example');
   // const { title, poster_path, release_date, popularity, genre_ids } = movie;
 
   contentModal.innerHTML = '';
