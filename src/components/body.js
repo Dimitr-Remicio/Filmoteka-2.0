@@ -1,7 +1,70 @@
 'use strict';
-import { services } from '../js/api-consume';
-import { getSome } from '../js/genres';
-import './bodyStyles.scss';
+
+const BASE_URL = 'https://api.themoviedb.org/3';
+const API_KEY = '2e9f8fc9479fa19131d9c8fc8ea7c110';
+
+const categories = {
+  trending: '/trending/all/week',
+  querySearch: '/search/movie',
+  genre: '/genre/movie/list',
+  basic: '&language=en-US',
+};
+const services = {
+  getMovies: async function(page = 1) {
+    try {
+      const url = `${BASE_URL}${categories.trending}?api_key=${API_KEY}${categories.basic}&page=${page}`;
+      const response = await fetch(url);
+      const movies = await response.json();
+      console.log(movies)
+      return movies.results;
+    } catch (error) {
+      console.log('hola desde error');
+      console.error(error);
+    }
+  }
+};
+
+
+const genresAll = {
+  12: 'Adventure',
+  14: 'Fantasy',
+  16: 'Animation',
+  18: 'Drama',
+  27: 'Horror',
+  28: 'Action',
+  35: 'Comedy',
+  36: 'History',
+  37: 'Western',
+  53: 'Thriller',
+  80: 'Crime',
+  99: 'Documentary',
+  878: 'Science Fiction',
+  9648: 'Mystery',
+  10402: 'Music',
+  10749: 'Romance',
+  10751: 'Family',
+  10752: 'War',
+  10770: 'TV Movie',
+};
+
+function getSome(idArr) {
+
+  const len = idArr.length;
+  if (len === 0) return '';
+
+  let n = [];
+  for (let i = 0; i < Math.min(2, len); i += 1) {
+    n.push(getName(idArr[i]));
+  }
+  if (len > 2) n.push('Other');
+
+  return n.join(', ');
+}
+
+function getName(id) {
+  return genresAll[id] || `Unknown genre(${id})`;
+}
+// import './bodyStyles.scss';
 
 let currentPage = 1;
 let markup = '';
@@ -32,7 +95,7 @@ layoutUtils.refreshMovieList();
 
 const ulTag = document.querySelector('.paginationList');
 
-let totalPages = 20;
+let totalPages = 100;
 let page = 5;
 
 function element(totalPages, page) {
