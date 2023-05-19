@@ -1,0 +1,119 @@
+@import '../../../node_modules/animate.css/animate.css';
+@import '../utils/colors';
+
+
+.loader {
+    --duration: 2.7s;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1000;
+    
+    animation: fadeOutDown; 
+    animation-duration: 1s; 
+    animation-delay: 1.5s;
+    
+    svg {
+        
+        animation: fadeInDown; 
+        animation-duration: 1s; 
+        animation-delay: 0s;
+      
+
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+        fill: var(--text-color);
+        stroke: var(--film-color);
+    }
+
+}
+
+.line-loader {
+    margin-top: 10px;
+    width: 250px;
+    height: 4px;
+    background: var(--loader-line);
+    overflow: hidden;
+  }
+.loader-line {
+    height: 4px;
+    background: var(--film-color);
+    border-left: 6px solid var(--film-color);
+    border-right: 6px solid var(--film-color);
+    box-sizing: border-box;
+  }
+
+  .a-loop {
+    animation: 1.7s infinite loop cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  }
+  @keyframes loop {
+    0% {
+      width: 0%;
+      transform: translateX(0%);
+    }
+    7% {
+      width: 10%;
+      transform: translateX(0%);
+    }
+    40% {
+      width: 50%;
+    }
+    50% {
+      transform: translateX(80%);
+    }
+    
+    75% {
+      width: 100%;
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+.loader {
+    display: inline-block;
+    margin: 0;
+}
+
+html {
+
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+    :before,
+    :after {
+        box-sizing: border-box;
+    }
+}
+
+// Center & dribbble
+.loader_page {
+    height: 100%;
+    width: 100%;
+    background: var(--background-color);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 1000;
+
+    
+    animation: fadeOut; 
+    animation-duration: 1s; 
+    animation-delay: 1.5s;
+    animation-iteration-count:initial;
+    
+
+}
+.loadhide{
+    transition: all 150ms;
+    display: none;
+}
