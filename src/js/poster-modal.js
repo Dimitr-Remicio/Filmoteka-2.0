@@ -20,7 +20,7 @@ const clearWhnClck = document.querySelector('.modal');
 function addModalPoster(event){
   event.preventDefault();
 
-  let contentPoster = event.target;
+  let contentPoster = event.currentTarget.innerHTML;
   
   console.log(contentPoster);
   
@@ -29,14 +29,14 @@ function addModalPoster(event){
   moviePoster.classList.add('div-example');
   // const { title, poster_path, release_date, popularity, genre_ids } = movie;
   
-  console.log('SI SIRVEEEEEEEEEEEEEEEEEEEEEE');
+  contentModal.innerHTML = ''; 
   
   const galleryMarkup = members
   .map(
     member =>
     `
     <div class="modal-body__image">
-    <img src="${member.photo}" alt="${member.name + member.surname}"/>
+    ${contentPoster}
     </div>
     `
     )
@@ -46,7 +46,6 @@ function addModalPoster(event){
     
   }
   clearContent.addEventListener('click', () => {
-    contentModal.innerHTML = ''; 
     console.log('sirveeee el CLICKKKKKKKKKKKKKKK')
     
   })
